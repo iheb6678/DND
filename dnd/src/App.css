@@ -1,47 +1,36 @@
-.App {
-  text-align: center;
-  font-family: Arial, sans-serif;
-  margin: 20px;
-}
+/* App.css */
 
+/* Style for the whole application container */
 .container {
   display: flex;
   justify-content: space-around;
-  margin-top: 2rem;
+  margin: 20px;
 }
 
-.source-container {
-  width: 30%;
-}
-
-.target-container {
-  width: 60%;
-}
-
-.box {
-  width: 100px;
-  height: 50px;
-  background-color: lightblue;
-  text-align: center;
-  padding: 1rem;
-  margin: 1rem;
-  cursor: pointer;
-  user-select: none;
-}
-
-.box.dragging {
-  opacity: 0.4;
-}
-
-.target {
-  min-height: 200px;
+/* Style for the individual zones */
+.zone {
   border: 2px dashed gray;
-  padding: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  min-height: 100px;
+  padding: 10px;
+  flex: 1;
 }
 
-.target .box {
-  margin: 0.5rem;
+/* Style for the draggable components */
+.component {
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+}
+
+/* Style for the dragged-over zone (optional) */
+.zone:hover {
+  background-color: #e0e0e0;
+}
+.dragged-component {
+  background-color: #f0f0f0;
+  padding: 8px;
+  border: 1px dashed #cccccc;
+  margin-top: 8px;
 }
